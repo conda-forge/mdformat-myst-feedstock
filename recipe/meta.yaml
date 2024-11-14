@@ -16,11 +16,11 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - flit-core >=2,<4
     - pip
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - mdformat <0.8.0,>=0.7.0
     - mdit-py-plugins >=0.3.0
     - mdformat-tables >=0.4.0
@@ -34,6 +34,7 @@ test:
   commands:
     - pip check
   requires:
+    - python {{ python_min }}
     - pip
 
 about:
