@@ -1,5 +1,5 @@
 {% set name = "mdformat-myst" %}
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/mdformat_myst-{{ version }}.tar.gz
-  sha256: b91cb1d8c7ec525a8cccdf5470c79c79193aa980d56af6d76cc5944b8c9f9f93
+  sha256: b45ebbf73c78c42bd6059c6ed910170488477a6285870561df7ac9d782978784
 
 build:
   noarch: python
