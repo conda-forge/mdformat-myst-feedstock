@@ -1,5 +1,5 @@
 {% set name = "mdformat-myst" %}
-{% set version = "0.2.1" %}
+{% set version = "0.2.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/mdformat_myst-{{ version }}.tar.gz
-  sha256: b45ebbf73c78c42bd6059c6ed910170488477a6285870561df7ac9d782978784
+  sha256: 9c09a9c3f4073ac7bb74159fab5d4c66fc8276e6638da05d5610ea81f803361e
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - mdformat <0.8.0,>=0.7.0
+    - mdformat >=0.7.0
     - mdit-py-plugins >=0.3.0
     - mdformat-tables >=0.4.0
     - mdformat-frontmatter >=0.3.2
