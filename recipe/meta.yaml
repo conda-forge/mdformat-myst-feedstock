@@ -20,14 +20,12 @@ requirements:
     - flit-core >=2,<4
     - pip
   run:
-    - mdformat-front-matters >=1.0.0
-    - mdformat-gfm >=1.0.0
     - python >={{ python_min }}
     - mdformat >=0.7.0
     - mdit-py-plugins >=0.3.0
-    - mdformat-tables >=0.4.0
-    - mdformat-frontmatter >=0.3.2
+    - mdformat-front-matters >=1.0.0
     - mdformat-footnote >=0.1.1
+    - mdformat-gfm >=1.0.0
     - ruamel.yaml >=0.16.0
 
 test:
